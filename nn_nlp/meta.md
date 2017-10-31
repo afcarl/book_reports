@@ -1,0 +1,1 @@
+[Neural Network Methods in Natural Language Processing (Synthesis Lectures on Human Language Technologies)](https://www.amazon.com/Language-Processing-Synthesis-Lectures-Technologies/dp/1627052984/ref=sr_1_1?ie=UTF8&qid=1508800401&sr=8-1&keywords=neural+network+methods+for+natural+language+processing), by Yoav Goldberg
