@@ -69,3 +69,29 @@ TODO
 
  - Dive deeper into backprop
 
+## Chapter 6: Features for Textual Data
+
+ - Atomic units:
+   - Words
+   - Texts
+   - Paired texts
+   - Word in context
+   - Relationship between two words
+
+ - Common Feature
+   - Words: Lemmas & stems, lexical resources (hashmap lookup for each word. E.g. wordnet words to cognitive synonyms)
+   - Texts: Bag of words, weighting (e.g. TF-IDF), ngrams
+   - Words in context: Window, position
+   - Inferred properties (e.g. part of speech, syntax, anaphora (pronoun resolution))
+   - Distributions features (e.g. embeddings, co-occurence, clustering)
+
+TODO
+
+ - Look into [wordnet](https://wordnet.princeton.edu/)
+
+## Chapter 7: Case studies of NLP Features
+
+ - Language identification: Bag of letter-bigrams. Related task: encoding detection
+ - Topic classification: Pre-defined topics: Bag of words, possibly with pre-processing and TF-IDF
+ - Authorship classification: bag of {function word, pronoun}, bag of POS tags (and POS N-grams) and function words (e.g. on, of, he)
+ - Adv: Named entity resolution, preposition disambituation, arc factored parsing
