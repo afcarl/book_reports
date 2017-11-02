@@ -31,3 +31,43 @@ By Gayle Laakmann McDowell
  - Flow chart from T-12 months to T+2 daysof interview
 
 ## V: Behavioral Questions
+
+Interview prep: Have soundbite for each question for 3 projects.
+ - Challenges
+ - Mistakes/failures
+ - Enjoyed
+ - Leadership
+ - Conflicts
+ - What you'd do differently
+
+General concepts
+ - Know honest weaknesses, how you're improving on them
+ - Questions for the interviewer: Be prepared
+ - Know technical projects
+
+Responding to BI questions
+
+ - Be speific, limit scope, offer to dive deeper
+ - Structure ansers
+   - Nugget first, then describe, or
+   - Situation, action, result
+ - Mind character traits: Initiative / leadership, empathy, compassion, humility, teamwork / helpfulness
+
+Tell me about yourself (general guidelines)
+
+ - Current role (quick), college, grad school and onward. current role (in depth), hobbies, summary
+
+## VI: Big O
+
+Time complexity & space complexity
+
+ - Big O: upper bound
+ - Big Omega: lower bound
+ - Big Theta: If O and Omega are the same, then that value is the Theta
+
+Tricks
+
+ - Amortized. E.g. array list X insertions take O(2x), while amortized time for each insertion is O(1)
+ - Log N: Pops up when you halve work with each step
+ - Recursive: Tends to be O(branches^{depth}), where branches are number of time recursive function is called in return line, and depth is recursion depth
+
