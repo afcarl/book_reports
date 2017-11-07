@@ -95,3 +95,39 @@ TODO
  - Topic classification: Pre-defined topics: Bag of words, possibly with pre-processing and TF-IDF
  - Authorship classification: bag of {function word, pronoun}, bag of POS tags (and POS N-grams) and function words (e.g. on, of, he)
  - Adv: Named entity resolution, preposition disambituation, arc factored parsing
+ 
+## Chapter 8: From Textual Features to Inputs
+
+Encoding categorical variables
+
+ - One hot encoding
+ - Dense encodings
+ 
+ Aggregating dense vector windows
+ 
+  - Sum
+  - Sum w/ positional weighting (further from center word weighted lower)
+  - Concatenate
+  - CBOW: Avg of embedding vectors
+  - Weighted CBOW; Weighted CBOW (E.g. w/ TF-IDF)
+ 
+Dense lookup
+ 
+ - Can effectively use OHE to 'select' word from Embedding matrix. Basically masking
+  
+Unknown words
+
+ - Can use special symbol (e.g. `UNK`)
+ - Word signatures: (e.g. `___ing*`, `*NUM*`), to capture some information
+ - Word dropout: Random inversely proportional to word's frequency.
+ - Word dropout for regularization: Randomly, no proportionality to word frequency  
+ 
+ 
+Misc
+
+ - Interaction terms unnecessary. Function is non-linear
+ - Can train positionally dependent word embeddings. Exploding train time
+ - Embedding dimensionality: 50-hundreds is common, no rule of thumb
+ - Can treat output layer as a backwards embedding for output labels. 
+ 
+Case study: POS tagging  
