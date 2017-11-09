@@ -2,7 +2,7 @@
 
 By Gayle Laakmann McDowell
 
-## Chapter 1: The interview process
+## I: The interview process
 
  - Overview of standard interview process
    - Goals: Measure analytical skills, coding skills, tech knowledge, experience and culture fit
@@ -10,12 +10,12 @@ By Gayle Laakmann McDowell
  - Lack of response means nothing
  - It is common to re-apply to positions
 
-## Chapter 2: Behind the scenes
+## II: Behind the scenes
 
  - Usual process: Tech screening, on site with multiple interviews
  - Case studies of interview processes at common large tech companies
 
-## Chapter 3: Special situations
+## III: Special situations
 
  - Experienced candidates: Less recent classword, more hands on experience
    - May or may not get algorithms questions
@@ -65,6 +65,15 @@ Time complexity & space complexity
  - Big Omega: lower bound
  - Big Theta: If O and Omega are the same, then that value is the Theta
 
+Space complexity:
+
+ - Not highly standardized
+ - Usually approach, Turing machine w/ 3 tapes
+   - Read only input tape
+   - Read & write working tape
+   - Write only output tape
+ - Most would only include the working tape. Including input would require minimum S: O(n), and including output doesn't discriminate between hard problems and large output problems
+
 Tricks
 
  - Amortized. E.g. array list X insertions take O(2x), while amortized time for each insertion is O(1)
@@ -95,4 +104,61 @@ Algorithms
  - Breadth first search: Add all children to queue (FIFO)
  - Binary search: Only valid for searching sorted arrays. Initialize upper and lower. Pick pivot element between upper and lower. If query element is greater than pivot element, set lower to pivot. If query element is below pivot element, set upper to pivot. If query element is pivot element, return. Rinse & repeat. 
  - Merge sort: Split array into n subarrays, each containing one element. Keep merging subarrays into ordered subarrays, until only one array remains. 
- - Quick sort: 
+ - Quick sort (Pivot sort): 
+   - Pick a pivot
+   - Re-order array so elements less than pivot come before, greater than come after. Pivot is now in final position
+   - Recursively apply operations to sub-arrays, until sub-arrays are of size 0 or 1
+
+### Technical question flow
+
+ - Listen: Identify problem, interesting / unusual information
+ - Example: Choose a moderate size example that isn't a special case. Work through applying algorithm on example as a 
+ human
+ - Outline algorithm
+   - Brute force: State the obvious / easy answer
+   - Optimize: Look for optimizations on brute force, find unused information, evaluate space and time complexity
+   - Walk through: Write TODOs for each step in algorithm, get an idea for modularity
+ - Implement: Write beautiful code
+ - Test
+   - Self code review
+   - Small test cases
+   - Special / edge cases
+
+### TODO
+
+ - Finish cheat sheet
+ - Implement Merge sort, Quick sort
+ - Memory: Stack vs heap
+ 
+## The Offer and Beyond
+
+ - Be polite
+ - Negotiate any offers you receive
+ 
+## IX: Interview Questions
+
+### Technical Question Approach (WIP)
+
+List out each explicitly 
+
+ - Problem: Given, Return
+ - Example: One positive, one negative (usually)
+ - Approaches: 
+   - List: List out possible options, starting w/ brute force.
+   - Evaluate: Find space and time complexity for each
+   - Choose
+   - Walk through
+ - Outline & Implement
+   - Write out method signature
+   - Write out TODOs, with space to implement
+   - Implement
+   - Test
+ - Step back
+   - Perform code review
+   - Evaluate solution
+   - Evaluate edge cases
+ - Outtro
+   - Potential next steps, optimizations
+   - Mention documentation & testing
+
+### IX Chapter 1: Arrays and Strings
