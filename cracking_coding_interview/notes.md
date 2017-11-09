@@ -162,3 +162,56 @@ List out each explicitly
    - Mention documentation & testing
 
 ### IX Chapter 1: Arrays and Strings
+
+Tips & Tricks:
+
+ - StringBuilder: Concatenating strings requires creating a new string for every concatenation. String builder avoids this by using a single ArrayList, and converting to a String when necessary.
+
+Solution ideas: 
+
+ - Start from end of array
+ - Use character counts
+
+### IX Chapter 2: Linked Lists
+
+Tips & Tricks
+
+ - Runner technique: Have 2 pointers. P1 moves one node per iteration, P2 moves k nodes per iteration
+
+Solution ideas:
+
+ - Use two pointers, to represent a 'window'
+
+### IX Chapter 3: Stacks and Queues
+
+Solution ideas:
+
+ - Modify node to hold information about stack (e.g. minimum when node was inserted)
+
+### IX Chapter 4: Trees and Graphs
+
+#### Trees
+
+Tree types
+
+ - Binary tree: 0 to 2 children per node
+ - Binary search tree: All left descendents <= node data < all right descendents
+ - Tries (Prefix Trees): n-ary tree, with one character stored at each node. * nodes indicate full words
+
+Descriptions
+ - Complete binary trees: All levels must be filled, except for last. Last is filled left to right
+ - Full binary tree: All nodes have 0 or 2 children
+ - Perfect: Full and complete
+ - Traversal: In order, pre-order, post-order
+
+#### Graphs
+
+Representations
+
+ - Adjacency list: (Edge, edge, weight) (sparse form)
+ - Adjacency matrix: Matrix, with edge weight w represented at M[a][b]= w
+
+Descriptions:
+
+ - Search: Depth first search, breadth first search
+ - Bi-directional search: For finding path between two nodes. Run BFS from each node. When two searches collide, shortest path found
