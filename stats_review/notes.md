@@ -52,10 +52,20 @@ ConversionXL
 
  - A/B testing for idiots
 
-## Backlog
+## Tasking
+
+Completed
 
  - Econometrics Appendix C: Fundamentals of Mathematical Statistics. Read & Notes
  - Econometrics Appendix B: Fundamentals of Probability. Read & Notes
  - Deep Learning: Chapter 3: Read & Notes
  - ConversionXL. Read on mobile, as time allows
+
+In progress
+
+Backlog
+
+
+ 
+ 
 
