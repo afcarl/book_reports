@@ -215,3 +215,23 @@ Descriptions:
 
  - Search: Depth first search, breadth first search
  - Bi-directional search: For finding path between two nodes. Run BFS from each node. When two searches collide, shortest path found
+
+### IX Chapter 13: Java
+
+ - Overloading: Same method name, different parameters
+ - Overriding: Same method name, same parameters for child class
+ - Collections contains common data structures
+
+### IX Chapter 13: Databases
+
+ - Where: Filter before GROUP BY
+ - Having: Filter after GROUP BY
+
+Normalization
+ - First normal form: Column domain only contains atomic entries (no lists), and cells only contain one element from that domain
+ - Second normal form: 1NF and no columns are functions of other columns
+ - Third normal form: Columns in table must be related to primary keys
+
+TODO
+
+ - Entity relationship diagrams
