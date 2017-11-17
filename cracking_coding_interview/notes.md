@@ -235,3 +235,114 @@ Normalization
 TODO
 
  - Entity relationship diagrams
+ 
+### IX Chapter 6: Math and Logic Puzzles
+
+Steps:
+
+ - Start talking
+ - Develop rules and find patterns
+ 
+### IX Chapter 7: Object Oriented Design
+
+Steps
+
+ - Drill down on ambigiuity
+ - Outline core objects / concepts
+ - Analyze relationship
+ - Walk through relationships
+ 
+Design patterns
+
+ - Singleton: All instances of class refer to one (static) instance of that class
+ - Factory: Object initializer returns appropriate sub-classes (e.g. CardGame returns Poker or BlackJack objects)
+  
+### IX Chapter 8: Recursion and Dynamic PRogramming
+
+Approaches
+
+ - Bottom up: Start with base case, aggregate
+ - Top Down: Divide into subproblems
+ - Half and half: E.g. Mergesort. Work down at bottom and top
+ 
+Notes
+ 
+ - All recursive solutions can be made into iterative solutions w/ a container (e.g. stack / queue)
+ - Dynamic programming / Memoization: Recursion w/ cache for already solved problems
+ 
+ 
+### IX Chapter 9: System Design and scalability
+
+Gotchas
+
+ - Communicate, check assumptions, state assumptions explicitly
+ - Design high level, dig in as necessary
+ 
+Steps
+
+ - Scope problem
+ - Make / list assumptions
+ - Outline major components
+ - Identify bottlenecks / issues
+ 
+ Tools / concepts
+ 
+  - Horizontal vs vertical
+  - Use Load balancers
+  - Use DB denormalization / NoSQL as necessary
+  - Identify DB partitioning
+  - Use caching as necessary
+  - Use async processing and queues as necessary 
+  
+Evaluations:
+
+ - Failure cases
+ - Availability / reliability
+ - Security
+ 
+### IX Chapter 10: Sorting and Searching
+
+Sorting algorithms:
+
+ - Bubble Sort: Bubble up until current value less than next
+ - Selection sort: Find smallest element, put first. Find next smallest element, put second. Repeat
+ - Merge sort: Halve array until arrays of length 1. Merge sub-arrays and sort
+ - Quick sort (pivot sort): Choose pivot. Move elements so left is all leq, right is all greater than. Repeat to 
+ sub-arrays.   
+ - Radix sort: Sort by each digit
+ - External sort: Similar to merge sort
+ 
+Search algorithms
+
+ - Binary search: Given sorted array, find index of query element. With lower and upper indices, compute midpoint. Based 
+ on query element and array [midpoint] comparison, return midpoint, search [lower, midpoint-1], or search [midpoint+1, upper]. When
+ lower > upper, element is not in array
+ 
+TODO: 
+ - Implement merge sort
+ - Implement quick sort 
+ 
+ 
+
+### IX Chatper 11: Testing
+
+Interviewer goals:
+
+ - Understand software goals, evaluate tests
+ - Understand / test integration points
+ - Organization
+ - If tests can be implemented
+ 
+Test question types:
+
+ - Real world object: Audience / users, use cases, bounds of use, graceful failures, test implementation
+ - Software: White box (access to source code) or blackbox (software as-is), audience / users, bounds of use, graceful failures
+ 
+ 
+Cases to check:
+
+ - Normal / typical inputs
+ - Edge cases / special cases
+ - Unusual / null / illegal inputs
+ 
+ 
