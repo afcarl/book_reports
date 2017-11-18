@@ -109,6 +109,11 @@ Algorithms
    - Re-order array so elements less than pivot come before, greater than come after. Pivot is now in final position
    - Recursively apply operations to sub-arrays, until sub-arrays are of size 0 or 1
 
+Concepts
+
+ - Memory (Stack): FILO memory container allocated for a single thread. As function calls are made, calls and local variables are added to top of stack. Once no further function calls are being made, function calls are removed from the top of the stack and executed
+ - Memory (Heap): General memory container for an application. Memory can be allocated / deallocated at any time, and blocks aren't necessarily sequential
+
 ### Technical question flow
 
  - Listen: Identify problem, interesting / unusual information
