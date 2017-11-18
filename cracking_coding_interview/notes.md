@@ -88,15 +88,22 @@ Core data structures, algorithms and concepts
  - Algorithms: Breadth First Search, Depth First Search, Binary Search, Merge Sort, Quick Sort
  - Concepts: Bit manipulation, Memory (stack vs heap), Recursion, Dynamic Programming, Big O time & space
 
-### Cheat sheet (WIP):
+### Cheat sheet:
 
 Data Structures
 
+ - Linked List: Each node has data load, pointer to next node. Can either have a wrapper class w/ pointer to head, or can pass around first node
+ - Trees: Node based structure specific case of graph, where each node as B children. No cycles allowed (depth is strictly increasing)
  - Tries: prefix-based trees, each node has valid_entry boolean
+ - Graphs: Node and edge based structure, where each node can have edges to any other node. Common implementations:
+   - Adjacency matrix: NxN matrix, with zero for no edge and non-zero for an edge
+   - Adjacency list (tuple): List of tuples (to, from, weight)
+   - Adjacency list (node): A list of nodes. Each node has a list of nodes it connects to
  - Stack: FILO
  - Queue: FIFO
  - Heap: Tree, where parents are greater than children (in max heap), or parents are less than children (in min heap). Commonly used as priority queue. 
  - Vectors / ArrayLists: They are the same. They are arrays that double in size when they are full. 
+ - HashTable: Key value store. Keys are hashed and stored in correct bucket
 
 Algorithms
 
@@ -111,6 +118,10 @@ Algorithms
 
 Concepts
 
+ - Bit manipulation: TODO
+ - Recursion: Function calling to self with different parameters. Adds to stack memory with each call. 
+ - Dynamic Programming (Memoization): Caching results from previous recursive calls, and looking them up rather than re-computing
+ - Big O time & space: See chapter
  - Memory (Stack): FILO memory container allocated for a single thread. As function calls are made, calls and local variables are added to top of stack. Once no further function calls are being made, function calls are removed from the top of the stack and executed
  - Memory (Heap): General memory container for an application. Memory can be allocated / deallocated at any time, and blocks aren't necessarily sequential
 
