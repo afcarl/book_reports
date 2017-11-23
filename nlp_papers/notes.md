@@ -21,4 +21,24 @@ Conclusion
  - List of exacting recommendations for hyperparameters
  - Limits scope to single sentence classification
 
+## Second pass
+
+Abstract
+
+ - Provide practical guidance for single layer CNN architectures, and which hyperparams to tune
+
+Introduction
+
+ - DL has many more free params than SVM, logistic
+ - Training can be very slow
+ - Possible model architectures & hyperparam space can be large
+   - Input word vector representation, filter region size(S), number of feature maps, activation function(s), pooling strategy, regularization (dropout/l2)
+
+
+## TODO
+
+ - Read [Kim2014] Yoon Kim. 2014. Convolutional neural networks for sentence classification. arXiv preprint arXiv:1408.5882.
+
+
+
 
