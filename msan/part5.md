@@ -23,3 +23,15 @@ User constants
  - Broadcasting: Add vector and matrix by duplicating vector
 
 - Tip: Force units to re-scale to output scale. This way, units don't need to learn to scale output
+
+ - Intro to calculus
+   - Jacobian / Hessian matrices
+
+ - Description of Stochastic Gradient Descent
+ - Description of momentum: If gradient is in same direction for successive epochs, increase learning rate
+ - Intro to Adam: Exponentially weighted moving average
+ - Linear interpolation
+
+### TODO
+
+ - Read adam paper
