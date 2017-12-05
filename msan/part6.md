@@ -25,5 +25,7 @@ RNNs
  - Purpose: Maintains stateful representation, w/ long term dependencies, variable length sequences
  - Hyperbolic tan good for hidden state to hidden state activation
  - Aggregate hidden (previous) state and current state. Can add or can concatenate
+ - Using zero vector for hidden state for first input (there is no hidden state for first input)
+ - First hidden state of zeros isn't great
 
 
