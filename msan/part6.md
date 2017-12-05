@@ -27,5 +27,6 @@ RNNs
  - Aggregate hidden (previous) state and current state. Can add or can concatenate
  - Using zero vector for hidden state for first input (there is no hidden state for first input)
  - First hidden state of zeros isn't great
+ - A simple way to initializie recurrent networs ... Hinton. Initialize w/ identity matrix
 
 
